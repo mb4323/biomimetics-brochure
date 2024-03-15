@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Octopus Arm-Inspired Tapered Soft Actuators with Suckers for Improved Grasping</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Octopus Arm-Inspired Tapered Soft Actuators with Suckers for Improved Grasping</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Zhexin Xie</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a>August G. Domel</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a>Ning An</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a>Connor Green</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a>Zheyuan Gong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Tianmiao Wang</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a>Elias M. Knubben</a><sup>4</sup>
+            </span>
+            <span class="author-block">
+              <a>James C. Weaver</a><sup>5</sup>
+            </span>
+            <span class="author-block">
+              <a>Katia Bertoldi</a><sup>3</sup>
+            </span>
+            <span class="author-block">
+              <a>Li Wen</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>School of Mechanical Engineering and Automation, Beihang University, Beijing, China.</span>
+            <span class="author-block"><sup>2</sup>Shenyuan Honors College, Beihang University, Beijing, China.</span>
+            <span class="author-block"><sup>3</sup>John A. Paulson School of Engineering and Applied Sciences, Harvard University, Cambridge, Massachusetts, USA.</span>
+            <span class="author-block"><sup>4</sup>Leitung Corporate Bionic Department, Festo SE & Co. KG, Germany.</span>
+            <span class="author-block"><sup>5</sup>Wyss Institute of Biologically Inspired Engineering, Harvard University, Cambridge, Massachusetts, USA.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="src/paper/xie-et-al-2020-octopus-arm-inspired-tapered-soft-actuators-with-suckers-for-improved-grasping-2.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=aVhVMRgygVE"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://www.liebertpub.com/doi/full/10.1089/soro.2019.0082"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./src/vids/supp_movies3.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        The Octopus-inspired gripper using its unique design to pick up a magazine.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies3.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies4.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies5.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies6.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies7.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies8.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" controls muted loop playsinline height="100%">
+            <source src="./src/vids/supp_movies9.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Octopuses can employ their tapered arms to catch prey of all shapes and sizes due to their dexterity, flexibility, and gripping power. Intrigued by variability in arm taper angle between different octopus species, we explored the utility of designing soft actuators exhibiting a distinctive conical geometry, compared with more traditional cylindrical forms. We find that these octopus-inspired conical-shaped actuators exhibit a wide range of bending curvatures that can be tuned by simply altering their taper angle and they also demonstrate greater flexibility compared with their cylindrical counterparts. The taper angle and bending curvature are inversely related, whereas taper angle and applied bending force are directly related. To further expand the functionality of our soft actuators, we incorporated vacuum-actuated suckers into the actuators for the production of a fully integrated octopus arm-inspired gripper. Notably, our results reveal that because of their enhanced flexibility, these tapered actuators with suckers have better gripping power than their cylindrical-shaped counterparts and require significantly larger forces to be detached from both flat and curved surfaces. Finally, we show that by choosing appropriate taper angles, our tapered actuators with suckers can grip, move, and place a remarkably wide range of objects with flat, nonplanar, smooth, or rough surfaces, as well as retrieve objects through narrow openings. The results from this study not only provide new design insights into the creation of next-generation soft actuators for gripping a wide range of morphologically diverse objects but also contribute to our understanding of the functional significance of arm taper angle variability across octopus species.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+  <div class="columns is-centered has-text-centered">
+    <!-- Concurrent Work. -->
+    <div class="columns">
+      <div class="column is-full-width">
+        <h2 class="title is-centered is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            <a href="https://newatlas.com/festo-octopusgripper-details/48721/">A closer look at Festo's OctopusGripper object grabber</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@article{doi:10.1089/soro.2019.0082,
+author = {Xie, Zhexin and Domel, August G. and An, Ning and Green, Connor and Gong, Zheyuan and Wang, Tianmiao and Knubben, Elias M. and Weaver, James C. and Bertoldi, Katia and Wen, Li},
+title = {Octopus Arm-Inspired Tapered Soft Actuators with Suckers for Improved Grasping},
+journal = {Soft Robotics},
+volume = {7},
+number = {5},
+pages = {639-648},
+year = {2020},
+doi = {10.1089/soro.2019.0082},
+    note ={PMID: 32096693},
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./src/paper/xie-et-al-2020-octopus-arm-inspired-tapered-soft-actuators-with-suckers-for-improved-grasping-2.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is constructed by students at Imperial College London. It is purely for the purpose of internal academic use. The works referenced in this page are the property of original authors. No claim is made of the works referenced.
+          </p>
+          <p>
+            With thanks to Mark Bromley, Julian Ing, Zain Hasan, Louis Flinn, and Dhana Jaya Kumar Sivaraman.
+          </p>
+          <p>
+            Website template forked from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Check it out!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
